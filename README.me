@@ -1,74 +1,45 @@
-
-# Dashboard de Retencion y Sastifaccion Estudiantil 
-
-Este proyecto corresponde a la **Actividad 1: Data Visualization and Dashboard Deployment**, de la asignatura **Minería de Datos**.
-
-## Descripción del proyecto
-
-El dashboard permite analizar la **retención**, la **satisfacción** y la **inscripción** de los estudiantes en diferentes áreas académicas de la universidad.  
-
-Se elaboró utilizando **Streamlit**, **Pandas**, **Seaborn** y **Matplotlib** para mostrar los resultados de forma clara e interactiva.
-
-## Columnas del dataset
-
-El dataset `university_student_data.csv` contiene la siguiente información:
-
-| Columna | Descripción |
-
-|----------|--------------|
-
-| `year` | Año académico del registro. |
-
-| `term` | Período o término académico (Spring, Fall, etc.). |
-
-| `applications` | Número total de solicitudes recibidas. |
-
-| `admitted` | Número de estudiantes admitidos. |
-
-| `enrolled` | Número total de estudiantes inscritos. |
-
-| `retention rate (%)` | Porcentaje de estudiantes que permanecen en el programa. |
-
-| `student satisfaction (%)` | Promedio de satisfacción estudiantil. |
-
-| `engineering enrolled`, `business enrolled`, `arts enrolled`, `science enrolled` | Número de estudiantes inscritos por área académica. |
-
-## Visualizaciones incluidas
-
-1. **Evolución de la tasa de retención** por año.  
-
-2. **Promedio de satisfacción estudiantil** a lo largo del tiempo.  
-
-3. **Comparación de inscripciones** entre las diferentes áreas académicas.
-
-## Justificación del enfoque
-
-Se decidió mostrar las **tendencias completas** en lugar de limitar los gráficos a un solo año o término, para facilitar la interpretación visual y permitir un análisis comparativo entre periodos.
-
-## Librerías utilizadas
-
-- pandas  
-
-- seaborn  
-
-- matplotlib  
-
-- streamlit  
-
-## Cómo ejecutar el proyecto
-
-1. Abre la carpeta del proyecto en Visual Studio Code.  
-
-2. Asegúrate de tener instaladas las librerías:
-
-pip install -r requirements.txt
-
-3. Ejecuta el dashboard con:
-
-streamlit run app.py 
-
-4. Se abrirá automáticamente en tu navegador (por defecto en `http://localhost:8501`).
+# Dashboard de Retención y Satisfacción Estudiantil
+Este proyecto corresponde a la **Actividad 1: Data Visualization and Dashboard Deployment** del curso **Minería de Datos**.  
+Fue desarrollado en dos partes: **análisis exploratorio de datos (Colab)** y **visualización interactiva (Streamlit)**.
 ---
+## 1. Descripción general
+El objetivo del proyecto es analizar la **retención**, la **satisfacción** y la **inscripción** de los estudiantes en distintas áreas académicas de la universidad, a partir del dataset `university_student_data.csv`.
+Se busca mostrar resultados de manera **visual e interactiva**, permitiendo observar tendencias a lo largo de los años académicos.
+---
+## 2. Parte 1: Análisis en Google Colab
+El análisis exploratorio de datos (EDA) fue realizado en un cuaderno de Google Colab y está vinculado a este repositorio.   
+ Archivo: **`Analisis_Colab.ipynb`**
+**Contenido del Colab:**
+- Carga y exploración del dataset  
+- Revisión de valores nulos y tipos de datos  
+- Cálculo de estadísticas descriptivas  
+- Visualizaciones:
+ - Tasa de retención por año  
+ - Promedio de satisfacción por año  
+ - Comparación de retención por término académico  
+- Conclusión general del comportamiento de los estudiantes  
+**Conclusión del análisis:**
+> Se observó una relación positiva entre la satisfacción estudiantil y la tasa de retención.  
+> Los términos con mayor satisfacción tienden a presentar mayor permanencia.  
+> Esto permite identificar periodos y áreas con mejor desempeño institucional.
+---
+## 3. Parte 2: Dashboard en Streamlit
+El dashboard fue desarrollado con **Python y Streamlit**.  
+Permite visualizar de forma dinámica los indicadores de retención y satisfacción por año, término y área académica.
+Archivo principal: **`app.py`**
+### Visualizaciones incluidas:
+1. **Tasa de retención por año** (gráfico de línea)  
+2. **Promedio de satisfacción estudiantil por año** (gráfico de barras)  
+3. **Comparación de inscripciones por áreas académicas** (barras comparativas)  
+**Librerías utilizadas:**
+- `streamlit`
+- `pandas`
+- `matplotlib`
+- `seaborn`
+**Cómo ejecutarlo localmente:**
+```bash
+pip install -r requirements.txt
+streamlit run app.py
 
 
 **Realizado por:**  
@@ -77,4 +48,8 @@ streamlit run app.py
 **Programa:** Ingeniería de Sistemas  
 **Asignatura:** Minería de Datos
  
+
+
+ 
+
 
