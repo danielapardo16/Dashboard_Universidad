@@ -1,0 +1,80 @@
+
+# Dashboard de Retencion y Sastifaccion Estudiantil 
+
+Este proyecto corresponde a la **Actividad 1: Data Visualization and Dashboard Deployment**, de la asignatura **Minería de Datos**.
+
+## Descripción del proyecto
+
+El dashboard permite analizar la **retención**, la **satisfacción** y la **inscripción** de los estudiantes en diferentes áreas académicas de la universidad.  
+
+Se elaboró utilizando **Streamlit**, **Pandas**, **Seaborn** y **Matplotlib** para mostrar los resultados de forma clara e interactiva.
+
+## Columnas del dataset
+
+El dataset `university_student_data.csv` contiene la siguiente información:
+
+| Columna | Descripción |
+
+|----------|--------------|
+
+| `year` | Año académico del registro. |
+
+| `term` | Período o término académico (Spring, Fall, etc.). |
+
+| `applications` | Número total de solicitudes recibidas. |
+
+| `admitted` | Número de estudiantes admitidos. |
+
+| `enrolled` | Número total de estudiantes inscritos. |
+
+| `retention rate (%)` | Porcentaje de estudiantes que permanecen en el programa. |
+
+| `student satisfaction (%)` | Promedio de satisfacción estudiantil. |
+
+| `engineering enrolled`, `business enrolled`, `arts enrolled`, `science enrolled` | Número de estudiantes inscritos por área académica. |
+
+## Visualizaciones incluidas
+
+1. **Evolución de la tasa de retención** por año.  
+
+2. **Promedio de satisfacción estudiantil** a lo largo del tiempo.  
+
+3. **Comparación de inscripciones** entre las diferentes áreas académicas.
+
+## Justificación del enfoque
+
+Se decidió mostrar las **tendencias completas** en lugar de limitar los gráficos a un solo año o término, para facilitar la interpretación visual y permitir un análisis comparativo entre periodos.
+
+## Librerías utilizadas
+
+- pandas  
+
+- seaborn  
+
+- matplotlib  
+
+- streamlit  
+
+## Cómo ejecutar el proyecto
+
+1. Abre la carpeta del proyecto en Visual Studio Code.  
+
+2. Asegúrate de tener instaladas las librerías:
+
+pip install -r requirements.txt
+
+3. Ejecuta el dashboard con:
+
+streamlit run app.py 
+
+4. Se abrirá automáticamente en tu navegador (por defecto en `http://localhost:8501`).
+---
+
+
+**Realizado por:**  
+*Daniela Isabel Pardo*  
+*Juan Donado*
+**Programa:** Ingeniería de Sistemas  
+**Asignatura:** Minería de Datos
+ 
+
